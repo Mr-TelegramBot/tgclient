@@ -1,9 +1,9 @@
 # tgclient
 
-#Getting Started
+# Getting Started
 
 
-##Install
+## Install
 ```sh
 pip install tgclient
 
