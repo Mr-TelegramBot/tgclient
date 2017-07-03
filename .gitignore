@@ -12,3 +12,4 @@ parts/
 sdist/
 venv/
 *.egg-info/
+build/

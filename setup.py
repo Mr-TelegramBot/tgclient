@@ -1,11 +1,11 @@
-from distutils.core import setup
 import setuptools
+from setuptools import setup, find_packages
 
 
 setup(
     name="tgclient",
-    packages=["tgclient", "tgclient.utils"],
-    version='0.2',
+    packages=find_packages(),
+    version='0.3',
     description='Telegram Api Client',
     author='Negative',
     author_email='negative.officiall@gmail.com',
@@ -16,5 +16,5 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3'
     ],
-    download_url="https://github.com/negative23/tgclient/archive/0.2.tar.gz"
+    download_url="https://github.com/negative23/tgclient/archive/0.3.tar.gz"
 )
