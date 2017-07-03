@@ -13,3 +13,4 @@ sdist/
 venv/
 *.egg-info/
 build/
+MANIFEST
