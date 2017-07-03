@@ -2,3 +2,13 @@ __pycache__/
 .idea/
 *.pyc
 Procfile
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+venv/
+*.egg-info/
