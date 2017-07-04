@@ -135,10 +135,6 @@ class TelegramBot:
 
         return self._req("getUpdates", query)
 
-    @staticmethod
-    def large_photo(photosize):
-        if 'file_id' in photosize[0]:
-            return photosize[(len(photosize) - 1)]
 
     def forwardMessage(self, chat_id, from_chat_id, message_id, disable_notification=None):
 
