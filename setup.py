@@ -9,7 +9,7 @@ setup(
     description='Telegram Api Client',
     author='Negative',
     author_email='negative.officiall@gmail.com',
-    url='https://github.com/negative23/telegram',
+    url='https://github.com/negative23/tgclient',
     install_requires=['six', 'requests'],
     keywords='telegram bot',
     license='GPL2',
