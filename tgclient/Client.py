@@ -69,6 +69,9 @@ class TelegramBot:
 
         return decorator
 
+    def getMe(self):
+        return self._req("getMe", {})
+
     def sendMessage(self, chat_id, text, parse_mode=None, disable_web_page_preview=None,
                     disable_notification=None, reply_to_message_id=None, reply_markup=None):
         query = {}
