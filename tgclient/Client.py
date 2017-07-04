@@ -39,6 +39,8 @@ class TelegramBot:
         else:
             if self._report_http_err:
                 raise Exception("Error HTTP : {}\n{}".format(request.status_code, request.content))
+            else:
+                print("Error HTTP : {}\n{}".format(request.status_code, request.content))
 
     def command(self, regex):
 
