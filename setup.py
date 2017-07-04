@@ -11,7 +11,7 @@ setup(
     author_email='negative.officiall@gmail.com',
     url='https://github.com/negative23/tgclient',
     install_requires=['six', 'requests'],
-    keywords='telegram bot',
+    keywords='telegram bot api',
     license='GPL2',
     classifiers=[
         'Programming Language :: Python :: 3'
