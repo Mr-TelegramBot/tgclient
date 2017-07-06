@@ -704,9 +704,13 @@ class TelegramBot:
 
                                     regex = re.compile(k, flags=re.MULTILINE | re.DOTALL)
                                     m = regex.match(result['message']['text'])
+
                                     if m:
+                                        match_list = []
+                                        for v in m.groups():
+                                            match_list.append(v)
                                         try:
-                                            v(result['message'], m)
+                                            v(result['message'], match_list)
                                         except TypeError:
                                             v(result['message'])
 
