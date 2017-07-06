@@ -707,8 +707,8 @@ class TelegramBot:
 
                                     if m:
                                         match_list = []
-                                        for v in m.groups():
-                                            match_list.append(v)
+                                        for x in m.groups():
+                                            match_list.append(x)
                                         try:
                                             v(result['message'], match_list)
                                         except TypeError:
