@@ -48,7 +48,7 @@ bot = TelegramBot("245100736:AAGpgrDLt1YNwsQxxxxxxxxxxxxxxxxxxxx")
 @bot.command(r'^(/echo) (.*)')
 def text(message, args):
     # args[2] two argument of command
-    bot.sendMessage(message['chat']['id'], args[2])
+    bot.sendMessage(message['chat']['id'], args[1])
 
 bot.run()
 
