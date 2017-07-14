@@ -167,6 +167,8 @@ class TelegramBot:
             else:
                 files['audio'] = audio
 
+            query['chat_id'] = chat_id
+
         if caption:
             query['caption'] = caption
 

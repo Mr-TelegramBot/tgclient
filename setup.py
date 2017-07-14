@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 setup(
     name="tgclient",
     packages=find_packages(),
-    version='1.3.4',
+    version='1.3.5',
     description='Telegram Api Client',
     author='Negative',
     author_email='negative.officiall@gmail.com',
