@@ -7,6 +7,7 @@ from .timer import Timer
 __all__ = [
     'TelegramBot',
     'InlineQueryResult',
+    'input_message_content',
     'InlineKeyboard',
     'large_photo',
     'small_photo',
