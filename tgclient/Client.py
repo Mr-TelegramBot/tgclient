@@ -16,6 +16,9 @@ class TelegramBot:
         self._callback_handler = []
         self._inline_handler = []
         self._report_http_err = True
+        self._edited_message = []
+        self._channel_post = []
+        self._edited_channel_post = []
 
     def get_token(self):
         return self.token
@@ -66,6 +69,27 @@ class TelegramBot:
 
         def decorator(d):
             self._inline_handler.append(d)
+
+        return decorator
+
+    def edited_message(self):
+
+        def decorator(d):
+            self._edited_message.append(d)
+
+        return decorator
+
+    def edited_channel_post(self):
+
+        def decorator(d):
+            self._edited_channel_post.append(d)
+
+        return decorator
+
+    def channel_post(self):
+
+        def decorator(d):
+            self._channel_post.append(d)
 
         return decorator
 
@@ -727,3 +751,15 @@ class TelegramBot:
                         elif 'inline_query' in result:
                             for v in self._inline_handler:
                                 v(result['inline_query'])
+
+                        elif 'channel_post' in result:
+                            for v in self._channel_post:
+                                v(result['channel_post'])
+
+                        elif 'edited_message' in result:
+                            for v in self._edited_message:
+                                v(result['edited_message'])
+
+                        elif 'edited_channel_post' in result:
+                            for v in self._edited_channel_post:
+                                v(result['edited_channel_post'])
