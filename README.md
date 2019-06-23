@@ -8,15 +8,13 @@ Telegram Api Client
 
 ## Install
 ```sh
-pip install tgclient
-
-or
-
-git clone https://github.com/negative23/tgclient.git
+git clone https://github.com/MrMahdi313/tgclient
 cd tgclient 
-
 python setup.py install
 
+or 
+
+pip install git+https://github.com/MrMahdi313/tgclient
 ```
 
 
